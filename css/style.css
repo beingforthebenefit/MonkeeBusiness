@@ -159,7 +159,7 @@ body {
   transform: translateY(75px);
   transition: all ease-in-out 250ms;
   transition-delay: 25ms;
-  z-index: 1;
+  z-index: 3;
 }
 
 .visible2 {
@@ -167,7 +167,7 @@ body {
   transform: translateY(150px);
   transition: all ease-in-out 250ms;
   transition-delay: 50ms;
-  z-index: 1;
+  z-index: 3;
 }
 
 .visible3 {
@@ -175,7 +175,7 @@ body {
   transform: translateY(225px);
   transition: all ease-in-out 250ms;
   transition-delay: 100ms;
-  z-index: 1;
+  z-index: 3;
 }
 
 .visible4 {
@@ -183,7 +183,7 @@ body {
   transform: translateY(300px);
   transition: all ease-in-out 250ms;
   transition-delay: 125ms;
-  z-index: 1;
+  z-index: 3;
 }
 
 .visible5 {
@@ -191,7 +191,7 @@ body {
   transform: translateY(375px);
   transition: all ease-in-out 250ms;
   transition-delay: 150ms;
-  z-index: 1;
+  z-index: 3;
 }
 
 section {

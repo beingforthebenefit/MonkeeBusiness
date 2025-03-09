@@ -132,49 +132,6 @@ $(function () {
         })
   })
 
-// Contact form
-$(function () {
-      $('.contactForm').on('submit', function (e) {
-          e.preventDefault();
-          let nom = $('#nom').val();
-          let telephone = $('#telephone').val();
-          let mail = $('#mail').val();
-          let message = $('#message').val();
-          let newsletter = $('input[name="newsletter"]:checked').val();
-          let checkRobot = $('#checkRobot').val();
-          if ($('#checkRobot').val() == 7) {
-              $.post('../datas/sendFormContact.php',
-                      {nom: nom,
-                        telephone: telephone,
-                        mail: mail,
-                        message: message,
-                        newsletter: newsletter,
-                        checkRobot: checkRobot },
-                        function(data, textStatus, xhr) {
-                            $('form').fadeOut(400, function() {
-                                $('#retourFormulaire').css({"padding": "10px",
-                                                            "margin-top": "160px",
-                                                            "margin-bottom": "160px",
-                                                            "margin-left": "auto",
-                                                            "margin-right": "auto",
-                                                            "color": "white",
-                                                            "font-size": "1rem",
-                                                            "text-align": "center"});
-                                $('#retourFormulaire').html(data);
-                            });
-                            $('#nom').val('');
-                            $('#telephone').val('');
-                            $('#mail').val('');
-                            $('#message').val('');
-                            $('#checkRobot').val('');
-                          });
-            } else {
-                alert('Incorrect anti robot check result !');
-            }
-
-      })
-})
-
 // Form newsletter input blur
 $(function () {
   let regexMail = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
@@ -199,38 +156,6 @@ $(function () {
           });
         }
     });
-})
-
-// Form newsletter ajax send
-$(function () {
-      $('.newsletterForm').on('submit', function (e) {
-          e.preventDefault();
-          let mail = $('#emailNews').val();
-          let checkRobot = $('#checkRobotNews').val();
-          if ($('#checkRobotNews').val() == 7 ) {
-              $.post('../datas/sendFormSubscription.php',
-                      { mail: mail,
-                        checkRobot: checkRobot },
-                        function(data, textStatus, xhr) {
-                            $('.newsletterForm').fadeOut(400, function() {
-                                $('#retourNewsFormulaire').css({"padding": "10px",
-                                                            "margin-top": "60px",
-                                                            "margin-bottom": "60px",
-                                                            "margin-left": "auto",
-                                                            "margin-right": "auto",
-                                                            "color": "white",
-                                                            "font-size": "1rem",
-                                                            "text-align": "center"});
-                                $('#retourNewsFormulaire').html(data);
-                            });
-                            $('#emailNews').val('');
-                            $('#checkRobotNews').val('');
-                          });
-            } else {
-                alert('Incorrect anti robot check result !');
-            }
-
-      })
 })
 
 // Animations on scroll

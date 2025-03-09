@@ -234,17 +234,17 @@ $(function () {
 // Locations
 $(function () {
   $(".card.gerald").on('click', () => {
-    window.location.href = "https://www.instagram.com/geraldtodd5249/";
+    window.open("https://www.instagram.com/geraldtodd5249/", '_blank');
   });
 })
 // Location socials
 $(function () {
-    $('.facebook').on('click', function(event) {
-      event.preventDefault();
-      window.location.href = "https://www.facebook.com/monkeebusinessband/";
-    });
-    $('.instagram').on('click', function(event) {
-      event.preventDefault();
-      window.location.href = "https://www.instagram.com/monkeebusinessband/";
-    });
+  $('.facebook').on('click', function(event) {
+    event.preventDefault();
+    window.open("https://www.facebook.com/monkeebusinessband/", '_blank');
+  });
+  $('.instagram').on('click', function(event) {
+    event.preventDefault();
+    window.open("https://www.instagram.com/monkeebusinessband/", '_blank');
+  });
 })

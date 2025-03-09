@@ -233,7 +233,9 @@ $(function () {
 
 // Locations
 $(function () {
-    $(".card").on('click', () => {window.location.href = "https://www.instagram.com/"});
+  $(".card.gerald").on('click', () => {
+    window.location.href = "https://www.instagram.com/geraldtodd5249/";
+  });
 })
 // Location socials
 $(function () {

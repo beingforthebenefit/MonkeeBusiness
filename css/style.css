@@ -303,7 +303,7 @@ h2#slogan {
 
 .scroll-down {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 30px;

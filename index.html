@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
-
     <meta charset="utf-8">
-    <title>Monkee Business</title>
-    <meta name="description" content="Monkee Business - A Tribute to the Monkees">
-
+    <title>Monkee Business - A Tribute to the Monkees</title>
+    <meta name="description" content="Experience the ultimate tribute to the Monkees with Monkee Business.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Open Graph Meta Tags for SEO -->
+    <meta property="og:title" content="Monkee Business - A Tribute to the Monkees">
+    <meta property="og:description" content="Experience the ultimate tribute to the Monkees with Monkee Business.">
+    <meta property="og:image" content="https://monkeebusinessband.com/img/monkee-business-logo.png">
+    <meta property="og:url" content="https://monkeebusinessband.com">
+    <meta property="og:type" content="website">
 
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monkee Business - A Tribute to the Monkees">
+    <meta name="twitter:description" content="Experience the ultimate tribute to the Monkees with Monkee Business.">
+    <meta name="twitter:image" content="https://monkeebusinessband.com/img/monkee-business-logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
@@ -20,277 +30,303 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- BALISE CANONIQUE -->
-    <link rel="canonical" href="">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com">
 
+    <!-- JSON-LD Structured Data for Music Group -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Monkee Business",
+        "genre": "Tribute Band",
+        "url": "https://example.com",
+        "sameAs": [
+          "https://www.facebook.com/monkeebusinessband/",
+          "https://www.instagram.com/monkeebusinessband/"
+        ],
+        "member": [
+          {"@type": "Person", "name": "Ed Glantz", "role": "Drums"},
+          {"@type": "Person", "name": "Gerald Todd", "role": "Bass & Keyboards"}
+        ]
+      }
+    </script>
+
+    <!-- JSON-LD Structured Data for Upcoming Event -->
+    <!-- TODO: AUTOMATE THIS -->
+    <!-- <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Monkee Business Live",
+        "startDate": "2024-11-29T21:00",
+        "location": {
+          "@type": "Place",
+          "name": "Madison Square Garden",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Manhattan",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+          }
+        },
+        "performer": {
+          "@type": "MusicGroup",
+          "name": "Monkee Business"
+        },
+        "description": "Experience an unforgettable tribute to the Monkees."
+      }
+    </script> -->
   </head>
   <body>
-  <noscript>
-    You must activate javascript to view this website !
-  </noscript>
-  <a id="top"></a>
-  <section class="mainView">
-    <!-- Bloc share -->
-    <div class="shareBtn">
-      <div class="elementBtn facebook">
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+    <a id="top"></a>
+
+    <!-- Header / Hero Section -->
+    <section class="mainView">
+      <!-- Social Share Buttons -->
+      <div class="shareBtn">
+        <div class="elementBtn facebook">
           <img src="img/facebook.svg" alt="Monkee Business Facebook">
-      </div>
-      <div class="elementBtn instagram">
+        </div>
+        <div class="elementBtn instagram">
           <img src="img/instagram.svg" alt="Monkee Business Instagram">
+        </div>
       </div>
-    </div>
-    <!-- Bloc menu -->
-    <div class="menu">
-      <div class=" line line1"></div>
-      <div class=" line line2"></div>
-      <div class=" line line3"></div>
-    </div>
-    <a href="#top">
-      <div class="ss-menu ss-menu1">
-          <img src="img/home-black-shape_white.svg" alt="Monkee Business Home">
+      <!-- Navigation Menu -->
+      <nav class="menu">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </nav>
+      <a href="#top">
+        <div class="ss-menu ss-menu1">
+          <img src="img/home-black-shape_white.svg" alt="Home">
+        </div>
+      </a>
+      <a href="#band">
+        <div class="ss-menu ss-menu2">
+          <img src="img/band_white.svg" alt="The Band">
+        </div>
+      </a>
+      <a href="#date">
+        <div class="ss-menu ss-menu3">
+          <img src="img/usb-tool-of-guitar-shape_white.svg" alt="Live Shows">
+        </div>
+      </a>
+      <a href="#music">
+        <div class="ss-menu ss-menu4">
+          <img src="img/headphones_white.svg" alt="Listen">
+        </div>
+      </a>
+      <a href="#contact">
+        <div class="ss-menu ss-menu5">
+          <img src="img/ring-phone-auricular-interface-symbol-with-lines-of-the-sound_white.svg" alt="Contact">
+        </div>
+      </a>
+
+      <div class="logo-container">
+        <img src="img/monkee-business-logo.png" alt="Monkee Business Logo" class="logo">
+        <h1 class="visually-hidden">Monkee Business</h1>
       </div>
-    </a>
-    <a href="#band">
-    <div class="ss-menu ss-menu2">
-        <img src="img/band_white.svg" alt="The Band">
-    </div>
-  </a>
-  <a href="#date">
-    <div class="ss-menu ss-menu3">
-        <img src="img/usb-tool-of-guitar-shape_white.svg" alt="Monkee Business Live">
-    </div>
-  </a>
-  <a href="#music">
-    <div class="ss-menu ss-menu4">
-        <img src="img/headphones_white.svg" alt="Listen to Monkee Business">
-    </div>
-  </a>
-  <a href="#contact">
-    <div class="ss-menu ss-menu5">
-        <img src="img/ring-phone-auricular-interface-symbol-with-lines-of-the-sound_white.svg" alt="Contact Monkee Business">
-    </div>
-  </a>
+      <h2 id="slogan">A Tribute to the Monkees</h2>
+      <div class="scroll-down">
+        <img src="img/down-arrow.svg" alt="Scroll down">
+      </div>
+    </section>
 
+    <!-- Next Show Section -->
+    <a id="nextShow"></a>
+    <section class="nextShow">
+      <h2 class="animatableX">Next Show</h2>
+      <div class="separator animatableOpacity"></div>
+      <div class="ss-nextShow">
+        <p class="hardLight animatableY">
+          November 29 | Madison Square Garden - Manhattan
+        </p>
+        <p class="pink"><a href="#date">Show all dates ➡</a></p>
+      </div>
+    </section>
 
-    <div class="logo-container">
-      <img src="img/monkee-business-logo.png" alt="Monkee Business Logo" class="logo">
-      <h1 class="visually-hidden">Monkee Business</h1>
-    </div>
-    <h2 id="slogan">A Tribute to the Monkees</h2>
-    <div class="scroll-down">
-      <img src="img/down-arrow.svg" alt="Scroll down">
-    </div>
-
-   </section>
-
-  <a id="nextShow"></a>
-  <section class="nextShow">
-    <h2 class="animatableX">Next show</h2>
-    <div class="separator animatableOpacity"></div>
-    <div class="ss-nextShow">
-      <p class="hardLight animatableY">
-        29 / 11 | Madison Square Garden - Manhattan
+    <!-- Band Section -->
+    <a id="band"></a>
+    <section class="band">
+      <h2 class="animatableX">Monkee Business</h2>
+      <div class="separator animatableOpacity"></div>
+      <p class="hardLight animatableY" lang="en">
+        "Experience the energy and nostalgia of the Monkees."
       </p>
-
-      <p class="pink"><a href="#date">Show all dates ➡</a></p>
-    </div>
-
-  </section>
-
-  <a id="band"></a>
-  <section class="band">
-    <h2 class="animatableX">Monkee Business</h2>
-    <div class="separator animatableOpacity"></div>
-    <p class="hardLight animatableY" lang="en">
-      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident.. "
-    </p>
-    <p class="animatableY">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vel quia modi obcaecati quas velit nam illo itaque autem porro repellat, animi magni enim est ullam quaerat nobis aspernatur id? Aut provident officia autem expedita doloremque tenetur natus laborum dolorum mollitia quisquam tempore molestiae, pariatur, eos, aliquid saepe animi obcaecati.
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum pariatur eum rem inventore error, nobis ea aperiam, tenetur saepe iure ipsa reiciendis! Animi aliquid numquam aliquam eos quisquam ducimus quam sequi dolorum unde sint voluptatem, quae corrupti modi nisi! Omnis amet, distinctio sapiente expedita quod possimus cum fugit similique, architecto.
-      <br />
-      Lorem ipsum dolor sit amet, consec tetur adipisicing elit. Sequi quisquam doloribus consectetur eligendi. Asperiores porro reiciendis commodi nisi nulla. Esse porro vel repellat placeat sed hic explicabo a, asperiores laborum sint, optio enim! In dignissimos fuga fugiat mollitia itaque iure, blanditiis officia nostrum expedita consectetur repudiandae libero nemo laboriosam maiores.
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae perspiciatis accusantium voluptatem aspernatur ipsa fugiat, ab quo commodi tempore quasi nihil. Possimus sed officia, earum deserunt doloremque magni? Dicta ab repudiandae voluptas sapiente quam, natus odit vero. Porro quis id sunt dolores voluptatum, veniam ullam sit iste! Ipsum, veritatis, adipisci.
-      <br /><br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dicta, cupiditate, deleniti adipisci dolorum nesciunt cumque qui! Iusto dicta ab perspiciatis, deserunt. Autem tempora fuga eligendi sint aliquid? Consequatur culpa vel nam aliquam, corporis mollitia quo commodi possimus incidunt iusto eos veniam nobis, tempore officia voluptatum nulla at eius omnis aut quam inventore beatae asperiores? Nisi maxime, quo velit debitis quia ab, repellat aspernatur sed neque accusamus voluptates laborum reprehenderit! Provident quod maiores quidem qui? Cum, vel deleniti voluptas, beatae nulla odit perferendis eligendi ab reiciendis nostrum esse aperiam, fugiat, laboriosam aspernatur accusamus facilis a! Quaerat blanditiis, impedit assumenda fugit officia ipsam quis et ab maxime eaque porro facilis repudiandae quam quas, earum fuga animi nostrum eius dolores magni error culpa, officiis. Voluptates praesentium excepturi iusto dolores nemo dignissimos dicta, cupiditate nam repellat consequuntur rerum dolorum aliquid eveniet, minus eius quasi at ullam recusandae deserunt soluta quo facere voluptas. Delectus, nesciunt. Inventore molestias laboriosam libero tenetur saepe nihil amet laborum suscipit, sed fuga, quae ut, eligendi earum. Ab, asperiores, vero! Facilis reiciendis beatae consectetur pariatur quasi quam nemo inventore animi soluta vitae, numquam quisquam suscipit ut id cum incidunt! Maxime aliquam ex adipisci optio neque officia reprehenderit necessitatibus. Impedit, saepe!
-    </p>
-    <div class="imgContent">
-      <div class="card animatableY">
-        <img class="lazyload" src="./img/guitar-rec-blur.jpg" data-src="./img/guitar-rec.jpg" alt="Drummer < Band Name >">
-        <noscript>
-          <img src="./img/guitar-rec.jpg" alt="Drummer < Band Name >">
-        </noscript>
-        <p>Greg</p>
-        <p>Guitars</p>
+      <p class="animatableY">
+        <!-- Placeholder for band bio. Replace with your own content. -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vel quia modi obcaecati quas velit nam illo itaque autem porro repellat, animi magni enim est ullam quaerat nobis aspernatur id? Aut provident officia autem expedita doloremque tenetur natus laborum dolorum mollitia quisquam tempore molestiae, pariatur, eos, aliquid saepe animi obcaecati.
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum pariatur eum rem inventore error, nobis ea aperiam, tenetur saepe iure ipsa reiciendis! Animi aliquid numquam aliquam eos quisquam ducimus quam sequi dolorum unde sint voluptatem, quae corrupti modi nisi! Omnis amet, distinctio sapiente expedita quod possimus cum fugit similique, architecto.
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam doloribus consectetur eligendi. Asperiores porro reiciendis commodi nisi nulla. Esse porro vel repellat placeat sed hic explicabo a, asperiores laborum sint, optio enim! In dignissimos fuga fugiat mollitia itaque iure, blanditiis officia nostrum expedita consectetur repudiandae libero nemo laboriosam maiores.
+        <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae perspiciatis accusantium voluptatem aspernatur ipsa fugiat, ab quo commodi tempore quasi nihil. Possimus sed officia, earum deserunt doloremque magni? Dicta ab repudiandae voluptas sapiente quam, natus odit vero. Porro quis id sunt dolores voluptatum, veniam ullam sit iste! Ipsum, veritatis, adipisci.
+        <br /><br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dicta, cupiditate, deleniti adipisci dolorum nesciunt cumque qui! Iusto dicta ab perspiciatis, deserunt. Autem tempora fuga eligendi sint aliquid? Consequatur culpa vel nam aliquam, corporis mollitia quo commodi possimus incidunt iusto eos veniam nobis, tempore officia voluptatum nulla at eius omnis aut quam inventore beatae asperiores? Nisi maxime, quo velit debitis quia ab, repellat aspernatur sed neque accusamus voluptates laborum reprehenderit! Provident quod maiores quidem qui? Cum, vel deleniti voluptas, beatae nulla odit perferendis eligendi ab reiciendis nostrum esse aperiam, fugiat, laboriosam aspernatur accusamus facilis a! Quaerat blanditiis, impedit assumenda fugit officia ipsam quis et ab maxime eaque porro facilis repudiandae quam quas, earum fuga animi nostrum eius dolores magni error culpa, officiis. Voluptates praesentium excepturi iusto dolores nemo dignissimos dicta, cupiditate nam repellat consequuntur rerum dolorum aliquid eveniet, minus eius quasi at ullam recusandae deserunt soluta quo facere voluptas. Delectus, nesciunt. Inventore molestias laboriosam libero tenetur saepe nihil amet laborum suscipit, sed fuga, quae ut, eligendi earum.
+      </p>
+      <div class="imgContent">
+        <div class="card animatableY">
+          <img class="lazyload" src="./img/ed.jpg" data-src="./img/ed.jpg" alt="Ed Glantz - Drums">
+          <noscript>
+            <img src="./img/ed.jpg" alt="Ed Glantz - Drums">
+          </noscript>
+          <p>Ed Glantz</p>
+          <p>Drums</p>
+        </div>
+        <div class="card animatableY">
+          <img class="lazyload" src="./img/gerald.jpg" data-src="./img/gerald.jpg" alt="Gerald Todd - Bass &amp; Keyboards">
+          <noscript>
+            <img src="./img/gerald.jpg" alt="Gerald Todd - Bass &amp; Keyboards">
+          </noscript>
+          <p>Gerald Todd</p>
+          <p>Bass &amp; Keyboards</p>
+        </div>
       </div>
-      <div class="card animatableY">
-        <img class="lazyload" src="./img/drums-rec-blur.jpg" data-src="./img/drums-rec.jpg" alt="Guitarist < Band Name >">
-        <noscript>
-          <img src="./img/drums-rec.jpg" alt="Guitarist < Band Name >">
-        </noscript>
-        <p>Charly</p>
-        <p>Drums</p>
-      </div>
-      <div class="card animatableY">
-        <img class="lazyload" src="./img/bass-rec-blur.jpg" data-src="./img/bass-rec.jpg" alt="Singer < Band Name >">
-        <noscript>
-          <img src="./img/bass-rec.jpg" alt="Singer < Band Name >">
-        </noscript>
-        <p>Jim</p>
-        <p>Bass - Keyboards</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <a id="date"></a>
-  <section class="date">
-    <h2 class="animatableX">Shows</h2>
-    <div class="separator animatableOpacity"></div>
-
-      <!-- Table date -->
+    <!-- Shows Section -->
+    <a id="date"></a>
+    <section class="date">
+      <h2 class="animatableX">Shows</h2>
+      <div class="separator animatableOpacity"></div>
+      <!-- Shows Table -->
       <table>
         <tr class="animatableY">
-          <td>29/11/2019</td>
+          <td>November 29, 2019</td>
           <td><span class="white"><a href="">Madison Square Garden</a></span><br />Manhattan</td>
-          <td>21h</td>
+          <td>9:00 PM</td>
         </tr>
         <tr class="animatableY">
-          <td>20/09/2019</td>
+          <td>September 20, 2019</td>
           <td><span class="white"><a href="">Carnegie Hall</a></span><br />Manhattan</td>
-          <td>21h</td>
+          <td>9:00 PM</td>
         </tr>
         <tr class="animatableY">
-          <td>26/07/2019</td>
-          <td><span class="white"><a href="">Fox Theater</a></span><br />Détroit</td>
-          <td>21h</td>
+          <td>July 26, 2019</td>
+          <td><span class="white"><a href="">Fox Theater</a></span><br />Detroit</td>
+          <td>9:00 PM</td>
         </tr>
         <tr class="animatableY">
-          <td>20/07/2019</td>
+          <td>July 20, 2019</td>
           <td><span class="white"><a href="">Apollo Theater</a></span><br />Manhattan</td>
-          <td>21h</td>
+          <td>9:00 PM</td>
         </tr>
         <tr class="animatableY">
-          <td>10/05/2019</td>
+          <td>May 10, 2019</td>
           <td><span class="white"><a href="">924 Gilman Street</a></span><br />Berkeley</td>
-          <td>21h</td>
+          <td>9:00 PM</td>
         </tr>
       </table>
-
     </section>
 
+    <!-- Newsletter Section -->
     <section class="blocNewsletter">
-      <h2 class="miniTitle animatableY">Keep update</h2>
-      <p class="miniPara animatableY"><br />Don't miss the next shows</p>
-      <!-- TODO: Replace with formspree -->
-      <form class="newsletterForm  animatableY">
-        <input aria-label="Entrez votre email" type="email" name="emailNews" id="emailNews" value="" placeholder="Email" required>
+      <h2 class="miniTitle animatableY">Stay Updated</h2>
+      <p class="miniPara animatableY"><br />Don't miss our upcoming shows</p>
+      <form
+        class="newsletterForm  animatableY"
+        action="https://formspree.io/f/xblgrbnp"
+        method="POST"
+      >
+        <label>
+          Your email:
+          <input aria-label="Enter your email" type="email" name="emailNews" id="emailNews" value="" placeholder="Email" required>
+        </label>
         <input type="submit" name="valider" value="Subscribe">
-        <div id="hideNews">
-          <div>
-            <label class="miniPara" for="checkRobotNews">Are you human ?</label>
-          </div>
-          <div>
-            <input type="number" id="checkRobotNews" name="checkRobotNews" value="" placeholder="Result of 4 + 3 ?">
-          </div>
-        </div>
-        <p class="hidePara" aria-hidden="true" id="helpMailNews"></p>
       </form>
-      <p aria-hidden="true" id="retourNewsFormulaire"></p>
+      <p class="miniPara animatableY">We respect your privacy. Unsubscribe at any time.</p>
     </section>
 
+    <!-- Music Section -->
+    <a id="music"></a>
+    <section class="music">
+      <h2 class="animatableX">Discover</h2>
+      <div class="separator animatableOpacity"></div>
+      <div class="ss-music">
+        <p class="hardLight animatableY">Your clip name here</p>
+        <video class="animatableY" id="bandVideo" controls poster="./img/bcc-free-template-rock-hard.png" preload="none">
+          <source src="videos/Rock-Band-Concert.mp4" type="video/mp4">
+          <!-- <source src="videos/Rock-Band-Concert.h264" type="video/h264">
+          <source src="videos/Rock-Band-Concert.webm" type="video/webm"> -->
+          Your browser does not support this video file format
+        </video>
+      </div>
+    </section>
 
-  <a id="music"></a>
-  <section class="music">
-    <h2 class="animatableX">Discover</h2>
-    <div class="separator animatableOpacity"></div>
+    <!-- Contact Section -->
+    <a id="contact"></a>
+    <section class="contact">
+      <h2 class="animatableX">Contact</h2>
+      <div class="separator animatableOpacity"></div>
+      <p class="hardLight">
+        Monkee Business<br>
+        San Francisco Bay Area
+      </p>
+      <p id="insertMail" class="hardLight"></p>
+      <form
+        class="contactForm"
+        action="https://formspree.io/f/xblgrbnp"
+        method="POST"
+      >
+      <input aria-label="Enter your name" type="text" id="name" name="name" value="" required placeholder="Name">
+      <p class="hidePara" aria-hidden="true" id="helpName"></p>
 
-    <div class="ss-music">
-      <p class="hardLight animatableY"><&nbsp;Your clip name here&nbsp;></p>
-      <video class="animatableY" id="bandVideo" controls poster="./img/bcc-free-template-rock-hard.png" preload="none">
-        <source src="videos/Rock-Band-Concert.mp4" type="video/mp4">
-        <source src="videos/Rock-Band-Concert.h264" type="video/h264">
-        <source src="videos/Rock-Band-Concert.webm" type="video/webm">
-        Your browser does not support this video file format
-      </video>
-    </div>
-  </section>
-
-  <a id="contact"></a>
-  <section class="contact">
-    <h2 class="animatableX">Contact</h2>
-    <div class="separator animatableOpacity"></div>
-
-    <p class="hardLight">
-      -&nbsp;Monkee Business&nbsp;-
-      <br />
-      San Francisco
-    </p>
-    <p id="insertMail" class="hardLight"></p>
-
-    <!-- TODO: Replace with formspree -->
-    <form class="contactForm">
-
-      <input aria-label="Saisissez votre nom" type="text" id="nom" name="nom" value="" required placeholder="Name">
-      <p class="hidePara" aria-hidden="true" id="helpNom"></p>
-
-      <input aria-label="Saisissez votre numéro de téléphone" type="text" id="telephone" name="telephone" value="" placeholder="Phone">
+      <input aria-label="Enter your phone number (optional)" type="text" id="telephone" name="telephone" value="" placeholder="Phone">
       <p class="hidePara" aria-hidden="true" id="helpTel"></p>
 
-      <input aria-label="Saissisez votre adresse email" type="email" id="mail" name="mail" value="" required placeholder="Email">
+      <input aria-label="Enter your email" type="email" id="mail" name="mail" value="" required placeholder="Email">
       <p class="hidePara" aria-hidden="true" id="helpMail"></p>
 
-      <textarea aria-label="Entrez votre message" id="message" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+      <textarea aria-label="Enter a message" id="message" name="message" rows="8" cols="80" placeholder="Message"></textarea>
 
-      <p class="labelP">Subscribe newsletter ?</p>
+      <p class="labelP">Subscribe to our email list?</p>
       <div class="label">
         <div class="inscriptionCheck">
-          <input type="radio" id="oui" name="newsletter" value="oui" checked>
-          <label for="oui">Yes</label>
+          <input type="radio" id="yes" name="newsletter" value="yes" checked>
+          <label for="yes">Yes</label>
         </div>
         <div class="inscriptionCheck">
-          <input type="radio" id="non" name="newsletter" value="non">
-          <label for="non">No</label>
+          <input type="radio" id="no" name="newsletter" value="no">
+          <label for="no">No</label>
         </div>
       </div>
 
-      <input type="number" id="checkRobot" aria-label="Contrôle anti robot : Saisissez le résultat de 3 + 4" name="checkRobot" value="" placeholder="Result of 3 + 4">
-      <p class="hidePara" aria-hidden="true" id="helpRobot"></p>
       <input type="submit" name="valider" value="send">
     </form>
-    <p class="hidePara" aria-hidden="true" id="retourFormulaire"></p>
-  </section>
+      <p class="hardLight">We will get back to you as soon as possible.</p>
+    </section>
 
-  <img id="upArrow" src="./img/upArrow.svg" alt="Retour haut du site">
+    <img id="upArrow" src="./img/up-arrow.svg" alt="Back to top">
 
-  <footer>
-    <div class="footerBaner">
-      <p class="bolder">estd</p>
-      <img class="bandBanner" src="./img/band_logo.svg" alt="">
-      <p class="bolder">2020</p>
-    </div>
-    <p class="bolder">MONKEE BUSINESS</p>
-    <!-- Bloc share -->
-    <div class="socialBanner">
+    <footer>
+      <div class="footerBaner">
+        <p class="bolder">estd</p>
+        <img class="bandBanner" src="./img/monkee-business-logo.png" alt="Band Logo">
+        <p class="bolder">2024</p>
+      </div>
+      <p class="bolder">MONKEE BUSINESS</p>
+      <div class="socialBanner">
         <img class="facebook" src="img/facebook-white.svg" alt="Monkee Business Facebook">
         <img class="instagram" src="img/instagram-white.svg" alt="Monkee Business Instagram">
-    </div>
+      </div>
+      <p>Copyright 2024 | Monkee Business</p>
+    </footer>
 
-    <p>Copyright 2024 | Monkee Business</p>
-  </footer>
-
-    <!-- Lazyload-->
+    <!-- Lazyload -->
     <script defer src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js" crossorigin></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"></script>
-
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" crossorigin></script>
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" crossorigin></script>
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" crossorigin></script>
-
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" crossorigin></script>
     <script defer src="js/mainFunctions.js"></script>
   </body>
-  </html>
+</html>

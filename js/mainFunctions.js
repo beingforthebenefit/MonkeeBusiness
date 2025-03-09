@@ -61,9 +61,9 @@ $(function () {
 // Listener pour chargement adresse mailto
 window.addEventListener("load", function () {
   if (document.getElementById('insertMail')) {
-    let name = "contact" ; // Update yours informations here
-    let domain = "yourbandname.com" ; // Update yours informations here
-    //let subject = "subject=Formulaire Tuco" ;
+    let name = "monkeebusinessband";
+    let domain = "gmail.com";
+    let subject = "subject=Monkee Business Band" ;
     let divMail = document.getElementById('insertMail');
     let newAhref = document.createElement('a');
     newAhref.href = "mailto:" + name + '@' + domain;
@@ -72,7 +72,7 @@ window.addEventListener("load", function () {
   }
 })
 
-// Manage vidéo
+// Manage video
 $(function () {
     $('video').on('click', function(event) {
       event.preventDefault();
@@ -83,27 +83,13 @@ $(function () {
 // Manage form
 $(function () {
     // Name
-      $('#nom').on('blur input', function () {
-        if ($('#nom').val().length >= 50) {
-          $('#helpNom').text('50 characters max').hide().show();
+      $('#name').on('blur input', function () {
+        if ($('#name').val().length >= 50) {
+          $('#helpName').text('50 characters max').hide().show();
         } else {
-          $('#helpNom').slideUp(400);
+          $('#helpName').slideUp(400);
         }
       })
-      // Phone
-        $('#telephone').on('blur input', function () {
-            let regexTelephone = /[0]{1}[1-7]{1}[0-9]{8}/;
-            let telEntry = String(document.getElementById('telephone').value);
-            for (var i = 0; i < telEntry.length; i++) {
-              telEntry = telEntry.replace(" ", "");
-            }
-            if (!telEntry.match(regexTelephone)) {
-                $('#helpTel').text('Incorrect phone number').hide().show();
-            } else {
-                $('#helpTel').slideUp(400);
-            }
-        })
-
     // Email
         $('#mail').on('blur input', function () {
           let regexMail = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
@@ -253,10 +239,10 @@ $(function () {
 $(function () {
     $('.facebook').on('click', function(event) {
       event.preventDefault();
-      window.location.href = "https://facebook.com/";
+      window.location.href = "https://www.facebook.com/monkeebusinessband/";
     });
     $('.instagram').on('click', function(event) {
       event.preventDefault();
-      window.location.href = "https://www.instagram.com/";
+      window.location.href = "https://www.instagram.com/monkeebusinessband/";
     });
 })

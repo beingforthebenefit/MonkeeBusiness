@@ -297,12 +297,12 @@ h2#slogan {
   font-weight: 600;
   color: #FF0000;
   text-shadow: 0 2px 10px #1A1B1D;
-  opacity: 0;
-  transform: translateY(-45px);
-  -webkit-animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
-  animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  /* opacity: 0; */
+  /* transform: translateY(-45px); */
+  /* -webkit-animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both;
+  animation: slideY 2s cubic-bezier(0.17, 0.67, 0.14, 0.97) both; */
+  /* -webkit-animation-delay: 1s;
+  animation-delay: 1s; */
 }
 
 .scroll-down {

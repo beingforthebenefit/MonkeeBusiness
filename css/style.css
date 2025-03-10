@@ -37,6 +37,7 @@ body {
   top: 5%;
   left: 5%;
   display: flex;
+  z-index: 2;
 }
 
 .elementBtn {
@@ -230,7 +231,6 @@ section {
   max-width: 1200px;
   height: auto;
   z-index: 1;
-  cursor: pointer;
 }
 
 h1 {

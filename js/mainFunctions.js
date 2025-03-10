@@ -48,15 +48,6 @@ $(function () {
   }
 })
 
-// Scroll down when clicking on div with class `scroll-down`
-$(function () {
-    $('.scroll-down').on('click', function () {
-        $('html, body').animate({
-            scrollTop: $('#nextShow').offset().top
-        }, 1000);
-    })
-})
-
 // Script adresse Email
 // Listener pour chargement adresse mailto
 window.addEventListener("load", function () {

@@ -774,6 +774,7 @@ button[name=backSite] {
 
   section {
     padding: 50px 2% 50px 2%;
+    position: relative;
   }
 
   section.blocNewsletter {

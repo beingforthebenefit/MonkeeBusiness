@@ -240,7 +240,7 @@ $(function () {
   });
 })
 
-$$(document).ready(function() {
+$(document).ready(function() {
   // If the URL has a hash on load, scroll to the target section
   if (window.location.hash) {
     var target = $(window.location.hash);

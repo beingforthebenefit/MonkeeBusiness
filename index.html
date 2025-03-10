@@ -131,9 +131,26 @@
       </a>
 
       <div class="logo-container">
-        <img src="img/monkee-business-logo.avif" width="1457" height="640" alt="Monkee Business Logo" class="logo">
+        <picture>
+          <source srcset="img/monkee-business-logo.svg" type="image/svg+xml">
+          <source srcset="img/responsive/monkee-business-logo-1920.webp 1920w,
+                          img/responsive/monkee-business-logo-1600.webp 1600w,
+                          img/responsive/monkee-business-logo-1200.webp 1200w,
+                          img/responsive/monkee-business-logo-800.webp 800w"
+                  type="image/webp"
+                  sizes="(max-width: 600px) 800px,
+                         (max-width: 1200px) 1200px,
+                         (max-width: 1600px) 1600px,
+                         1920px">
+          <img src="img/responsive/monkee-business-logo-1200.webp"
+               width="1457"
+               height="640"
+               alt="Monkee Business Logo"
+               class="logo">
+        </picture>
         <h1 class="visually-hidden">Monkee Business</h1>
       </div>
+
       <h2 id="slogan">A Tribute to the Monkees</h2>
       <div class="scroll-down">
         <img src="img/down-arrow.svg" width="30px" height="30px" alt="Scroll down">

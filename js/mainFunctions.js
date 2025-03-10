@@ -239,3 +239,30 @@ $(function () {
     window.open("https://www.instagram.com/monkeebusinessband/", '_blank');
   });
 })
+
+$(document).ready(function() {
+  // If the URL has a hash on load, scroll to the target section
+  if (window.location.hash) {
+    var target = $(window.location.hash);
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 600, function() {
+        target.addClass('showed');
+      });
+    }
+  }
+
+  // Override default behavior for all anchor links starting with #
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this.hash);
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 600);
+      // Update the URL hash without jump
+      history.pushState(null, null, this.hash);
+    }
+  });
+});

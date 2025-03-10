@@ -54,10 +54,10 @@ window.addEventListener("load", function () {
   if (document.getElementById('insertMail')) {
     let name = "monkeebusinessband";
     let domain = "gmail.com";
-    let subject = "subject=Monkee Business Band" ;
+    let subject = "subject=Monkee Business Band";
     let divMail = document.getElementById('insertMail');
     let newAhref = document.createElement('a');
-    newAhref.href = "mailto:" + name + '@' + domain;
+    newAhref.href = "mailto:" + name + '@' + domain + "?" + subject;
     newAhref.innerHTML = name + '@' + domain;
     divMail.appendChild(newAhref);
   }

@@ -32,6 +32,10 @@ body {
   background-color: #1A1B1D;
 }
 
+section {
+  position: relative;
+}
+
 .shareBtn {
   position: absolute;
   top: 5%;
@@ -485,6 +489,10 @@ p.pink:hover {
   letter-spacing: 1px;
 }
 
+.band a div.scroll-down {
+  bottom: 1%;
+}
+
 .ss-nextShow, .ss-music {
   display: flex;
   flex-direction: column;
@@ -510,6 +518,11 @@ section.blocNewsletter {
   background-position: 50% 40%;
   background-size: cover;
 }
+
+section.blocNewsletter a div.scroll-down {
+  bottom: 1%;
+}
+
 
 form.newsletterForm input {
   color: #1A1B1D;
@@ -774,7 +787,6 @@ button[name=backSite] {
 
   section {
     padding: 50px 2% 50px 2%;
-    position: relative;
   }
 
   section.blocNewsletter {

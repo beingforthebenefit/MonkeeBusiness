@@ -267,3 +267,16 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function() {
+  const arrowLink = $('#scrollDownArrow');
+  arrowLink.on('click', function(e) {
+    e.preventDefault(); // prevents the "#" from appearing in the URL
+    const nextSection = $('#nextShow');
+    if (nextSection.length) {
+      $('html, body').animate({
+        scrollTop: nextSection.offset().top
+      }, 600);
+    }
+  });
+});

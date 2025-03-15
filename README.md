@@ -1,57 +1,54 @@
-# :trollface: Free Rock Band Website Template :guitar:
+# Monkee Business
 
-<p align="center">
-  <img width="500" height="283" src="./img/screenshots/desktop.png" alt="Illustrations web page desktop">
-</p>
-<p align="center">
-  <img width="300" height="500" src="./img/screenshots/mobile.png" alt="Illustrations web page mobile">
-</p>
-<p align="center">
-  <img width="300" height="500" src="./img/screenshots//mobile-menu.png" alt="Illustrations web page mobile menu">
-</p>
+A website for a tribute band to The Monkees featuring a dynamic, responsive design and an animated guitar logo.
 
+## Features
 
-:point_right:[Show webpage here](https://gtcore902.github.io/free-rock-band-website-template/):metal:
+#### Responsive Design:
 
-## :free: You can use this template for your Rock Band web site !
+The website is built to look great on all devices with a mobile-first approach.
 
-### How to ?
+#### Image Optimization:
 
-:one:
+Images are optimized for fast loading. Use the provided convert_to_webp_avif.sh script to convert image assets into efficient WebP and AVIF formats.
+
+#### Animated Logo:
+
+The guitar-shaped logo is animated using CSS, adding a lively touch reminiscent of a live performance.
+
+#### Local Development Server:
+
+Quickly launch the site locally with the included server.py file.
+
+## Getting Started
+
+#### 1. Clone the Repository:
+
+```bash
+git clone https://github.com/beingforthebenefit/MonkeeBusiness.git
+cd MonkeeBusiness
 ```
-mkdir <your directory>
-git clone https://github.com/gtcore902/free-rock-band-website-template.git
+
+#### 2. Optimize Images: Run the conversion script to generate WebP and AVIF formats:
+
+```bash
+cd img
+chmod +x convert_to_webp_avif.sh
+./convert_to_webp_avif.sh
 ```
 
-:two: Updates in 'index.html' :
-* 'alt' attributes for img tags
-* input your band name in place of < your band name here >
-* your band name in h1 / h2 tags
-* your clip and clip name in video tag
+This script converts to both formats and chooses the one with the smallest filesize to keep.
 
-:three: Update 'mainFunctions.js' file to input email address (line 55 / 56).
+#### 3. Start the Development Server: Launch the server with:
 
-:four: To update yours social network accounts, modify lines 316 / 322 / 326 in the same file.
-
-:five: Then you need to update these variables in 'sendFormContact.php' in your code editor to use form sections:
-* $texte = "your site name" (line 11)
-* $destinataire = "your email"
-* $objet = "your band name"
-* line 19 = "email from to send form" (you can choose any)
-* $conf = "yours smtp informations"
-
-:six: Do the same actions in 'sendFormSubscription.php' file.
-
-That's all:exclamation:
-Deploy this code on your server.
-
-### :sunglasses: Want to contribute :question:
-
-Fork this repository :stuck_out_tongue_winking_eye:
+```bash
+python server.py
 ```
-mkdir <your directory>
-git clone https://github.com/gtcore902/free-rock-band-website-template.git
-git checkout -b newfeature
-git commit -am 'your feature'
-git push origin newfeature
-```
+
+Then open your browser at http://localhost:5500.
+
+## Technologies Used
+
+- HTML, CSS, JavaScript
+- Python (for the local server)
+- Inkscape (for SVG asset creation)

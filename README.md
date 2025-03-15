@@ -49,6 +49,28 @@ python server.py
 
 Then open your browser at http://localhost:5500.
 
+#### 4. Deploying using Github Pages
+
+Create a branch called `gh-pages`:
+
+```bash
+git checkout -b gh-pages
+```
+
+Set GitHub Pages to deploy from the `gh-pages` branch in your repository settings.
+
+Run the following command to make the deploy script executable:
+
+```bash
+chmod +x deploy.sh
+```
+
+Deploy the site with:
+
+```bash
+./deploy.sh
+```
+
 ## Technologies Used
 
 - HTML, CSS, JavaScript

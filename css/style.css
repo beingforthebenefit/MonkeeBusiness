@@ -232,22 +232,6 @@ section {
   z-index: 1;
 }
 
-.logo {
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  animation: vibrate 0.5s infinite;
-}
-
-@keyframes vibrate {
-  0%   { transform: translate(-50%, -50%) rotate(0deg); }
-  25%  { transform: translate(calc(-50% + 2px), calc(-50% - 2px)) rotate(2deg); }
-  50%  { transform: translate(calc(-50% - 2px), calc(-50% + 2px)) rotate(-2deg); }
-  75%  { transform: translate(calc(-50% + 2px), calc(-50% + 2px)) rotate(2deg); }
-  100% { transform: translate(-50%, -50%) rotate(0deg); }
-}
-
 h1 {
   position: absolute;
   text-align: center;

@@ -222,12 +222,6 @@ $(function () {
     });
 })
 
-// Locations
-$(function () {
-  $(".card.gerald").on('click', () => {
-    window.open("https://www.instagram.com/geraldtodd5249/", '_blank');
-  });
-})
 // Location socials
 $(function () {
   $('.facebook').on('click', function(event) {

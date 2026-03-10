@@ -366,11 +366,26 @@ p.miniPara {
   margin: 70px auto 70px auto;
 }
 
+.band-description {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.band-description p {
+  margin: 20px 0;
+  line-height: 1.8;
+}
+.band-cta {
+  font-size: 1.4rem;
+  color: #FF0000 !important;
+  margin-top: 30px !important;
+}
+
 .imgContent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   margin: auto;
   width: 80%;
 }
@@ -378,7 +393,9 @@ p.miniPara {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
+  max-width: 350px;
 }
 .imgContent .card p {
   text-align: center;
@@ -403,7 +420,6 @@ p.miniPara {
   max-width: 250px;
   height: 250px;
   opacity: 0;
-  /* background-color: rgba(244, 89, 30, 0.7); */
   background-color: rgba(255, 0, 0, 0.7);
   z-index: 2;
   transition: all ease-in-out 150ms;
@@ -420,6 +436,18 @@ p.miniPara {
   border-radius: 15px;
   object-fit: cover;
   aspect-ratio: 1 / 1;
+}
+
+.member-bio {
+  margin-top: 15px;
+  max-width: 300px;
+}
+.member-bio p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #9fa0ac;
+  text-align: center;
+  margin: 10px 0;
 }
 
 p.miniTitle {

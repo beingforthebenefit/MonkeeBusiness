@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Monkee Business - A Tribute to the Monkees</title>
-    <meta name="description" content="Experience the ultimate tribute to the Monkees with Monkee Business.">
+    <meta name="description" content="Monkee Business is the San Francisco Bay Area's premier Monkees tribute band, faithfully recreating the classic recordings of The Monkees. Book us for your next event!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Monkees tribute band, Bay Area tribute band, Monkees cover band, San Francisco live music, 60s tribute band">
 
     <!-- Open Graph Meta Tags for SEO -->
     <meta property="og:title" content="Monkee Business - A Tribute to the Monkees">
-    <meta property="og:description" content="Experience the ultimate tribute to the Monkees with Monkee Business.">
+    <meta property="og:description" content="The Bay Area's premier Monkees tribute band, faithfully recreating the classic recordings. Experience Monkee Business!">
     <meta property="og:image" content="https://monkeebusinessband.com/img/responsive/monkee-business-logo-1200.webp">
     <meta property="og:url" content="https://monkeebusinessband.com">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Monkee Business">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Monkee Business - A Tribute to the Monkees">
-    <meta name="twitter:description" content="Experience the ultimate tribute to the Monkees with Monkee Business.">
+    <meta name="twitter:description" content="The Bay Area's premier Monkees tribute band, faithfully recreating the classic recordings. Experience Monkee Business!">
     <meta name="twitter:image" content="https://monkeebusinessband.com/img/responsive/monkee-business-logo-1200.webp">
 
     <!-- Preload logo -->
@@ -39,50 +42,62 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://monkeebusinessband.com">
 
-    <!-- JSON-LD Structured Data for Music Group -->
+    <!-- JSON-LD Structured Data for MusicGroup -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MusicGroup",
         "name": "Monkee Business",
-        "genre": "Tribute Band",
-        "url": "https://example.com",
-        "sameAs": [
-          "https://www.facebook.com/monkeebusinessband/",
-          "https://www.instagram.com/monkeebusinessband/"
-        ],
-        "member": [
-          {"@type": "Person", "name": "Ed Glantz", "role": "Drums"},
-          {"@type": "Person", "name": "Gerald Todd", "role": "Bass & Keyboards"}
-        ]
-      }
-    </script>
-
-    <!-- JSON-LD Structured Data for Upcoming Event -->
-    <!-- TODO: AUTOMATE THIS -->
-    <!-- <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "Monkee Business Live",
-        "startDate": "2024-11-29T21:00",
-        "location": {
+        "description": "The San Francisco Bay Area's premier Monkees tribute band, faithfully recreating the classic recordings of The Monkees.",
+        "genre": ["Tribute", "1960s Pop Rock", "Classic Rock"],
+        "url": "https://monkeebusinessband.com",
+        "image": "https://monkeebusinessband.com/img/responsive/monkee-business-logo-1200.webp",
+        "foundingDate": "2024",
+        "foundingLocation": {
           "@type": "Place",
-          "name": "Madison Square Garden",
+          "name": "San Francisco Bay Area",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Manhattan",
-            "addressRegion": "NY",
+            "addressRegion": "CA",
             "addressCountry": "US"
           }
         },
-        "performer": {
-          "@type": "MusicGroup",
-          "name": "Monkee Business"
-        },
-        "description": "Experience an unforgettable tribute to the Monkees."
+        "sameAs": [
+          "https://www.facebook.com/monkeebusinessband/",
+          "https://www.instagram.com/monkeebusinessband/",
+          "https://www.songkick.com/artists/10367277"
+        ],
+        "member": [
+          {
+            "@type": "Person",
+            "name": "Ed Glantz",
+            "roleName": "Drums, Vocals",
+            "description": "Classically trained pianist turned drummer with decades of tribute band experience, emulating the great Hal Blaine and The Wrecking Crew."
+          },
+          {
+            "@type": "Person",
+            "name": "Gerald Todd",
+            "roleName": "Bass, Keyboards"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Booking",
+          "email": "monkeebusinessband@gmail.com"
+        }
       }
-    </script> -->
+    </script>
+
+    <!-- JSON-LD Structured Data for WebSite (helps search engines) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Monkee Business",
+        "url": "https://monkeebusinessband.com",
+        "description": "Official website of Monkee Business, the Bay Area's premier Monkees tribute band."
+      }
+    </script>
   </head>
   <body>
     <noscript>
@@ -93,15 +108,15 @@
     <section class="mainView" id="top">
       <!-- Social Share Buttons -->
       <div class="shareBtn">
-        <div class="elementBtn facebook">
-          <img src="img/facebook.svg" width="40px" height="40px" alt="Monkee Business Facebook">
-        </div>
-        <div class="elementBtn instagram">
-          <img src="img/instagram.svg" width="40px" height="40px" alt="Monkee Business Instagram">
-        </div>
+        <a href="https://www.facebook.com/monkeebusinessband/" target="_blank" rel="noopener noreferrer" class="elementBtn facebook" aria-label="Monkee Business on Facebook">
+          <img src="img/facebook.svg" width="40" height="40" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/monkeebusinessband/" target="_blank" rel="noopener noreferrer" class="elementBtn instagram" aria-label="Monkee Business on Instagram">
+          <img src="img/instagram.svg" width="40" height="40" alt="Instagram">
+        </a>
       </div>
       <!-- Navigation Menu -->
-      <nav class="menu">
+      <nav class="menu" aria-label="Main navigation" role="navigation">
         <div class="line line1"></div>
         <div class="line line2"></div>
         <div class="line line3"></div>
@@ -186,25 +201,61 @@
       <h2 class="animatableX">Monkee Business</h2>
       <div class="separator animatableOpacity"></div>
       <p class="hardLight animatableY" lang="en">
-        "Experience the energy and nostalgia of the Monkees."
+        "Faithfully recreating the music you remember."
       </p>
-      <p class="animatableY">
-        <!-- Placeholder for band bio. Replace with your own content. -->
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vel quia modi obcaecati quas velit nam illo itaque autem porro repellat, animi magni enim est ullam quaerat nobis aspernatur id? Aut provident officia autem expedita doloremque tenetur natus laborum dolorum mollitia quisquam tempore molestiae, pariatur, eos, aliquid saepe animi obcaecati.
-      </p>
+      <div class="band-description animatableY">
+        <p>
+          Monkee Business is the brainchild of drummer Ed Glantz, who, while watching a Monkees cover band
+          that mashed up Monkees with metal, decided the Bay Area was really missing an important musical
+          constituent &ndash; a true Monkees tribute band that plays the music just like the original recordings.
+        </p>
+        <p>
+          After all, their music was written largely by the top writers in the business, including Neil Diamond,
+          Carole King, David Gates, and the team of Boyce and Hart. The instruments were largely played by The
+          Wrecking Crew, a collection of the best studio musicians in the country. With most lead vocals by Micky
+          Dolenz and Davy Jones, backed by (and occasionally fronted by) Michael Nesmith and Peter Tork, the
+          songs became one of the main soundtracks of the 1960&rsquo;s.
+        </p>
+        <p>
+          So, come on out and experience The Monkees songs you remember from your youth (or have more
+          recently discovered), played the way you remember hearing them way back then, by a band of
+          musicians who all love the music and are dedicated to playing it the way audiences really want &ndash;
+          faithfully!
+        </p>
+        <p class="band-cta"><strong>Experience Monkee Business!</strong></p>
+      </div>
       <div class="imgContent">
         <div class="card ed animatableY">
-          <img class="lazyload" src="./img/ed.avif" data-src="./img/ed.avif" width="250" height="305" alt="Ed Glantz - Drums">
+          <img class="lazyload" src="./img/ed.avif" data-src="./img/ed.avif" width="250" height="305" alt="Ed Glantz - Drums and Vocals">
           <noscript>
-            <img src="./img/ed.avif" width="250" height="305" alt="Ed Glantz - Drums">
+            <img src="./img/ed.avif" width="250" height="305" alt="Ed Glantz - Drums and Vocals">
           </noscript>
           <p>Ed Glantz</p>
-          <p>Drums</p>
+          <p>Drums &amp; Vocals</p>
+          <div class="member-bio">
+            <p>
+              A classically trained pianist as a child, Ed got his first drum kit at age 10 after his parents decided they
+              would rather cook with undented pots and pans. They thought two years of drum lessons and sound-proofing
+              the garage would keep them sane &ndash; hah!
+            </p>
+            <p>
+              After college and a brief hiatus from playing music, Ed rejoined the music scene about 20 years ago and
+              quickly developed a passion for tribute bands. Ed grew up in the age of Rock n Roll, listening to The Beatles,
+              The Who, The Stones, Chicago, Steely Dan and, of course, The Monkees.
+            </p>
+            <p>
+              Fast forward 50 (plus) years. Having played drums with four different Beatles Tribute bands, one Stones
+              tribute band, two Doors tribute bands, and numerous cover bands (playing everything from rock to jazz to
+              Motown to funk), Ed is now emulating the great Hal Blaine (and other Wrecking Crew drummers), laying down
+              the back beats you remember from those great Monkees albums! And, on occasion, Ed lends his vocals to the
+              mix, helping to round out those great harmonies.
+            </p>
+          </div>
         </div>
         <div class="card gerald animatableY">
-          <img class="lazyload" src="./img/gerald.avif" data-src="./img/gerald.avif" width="250" height="166.5" alt="Gerald Todd - Bass &amp; Keyboards">
+          <img class="lazyload" src="./img/gerald.avif" data-src="./img/gerald.avif" width="250" height="167" alt="Gerald Todd - Bass and Keyboards">
           <noscript>
-            <img src="./img/gerald.avif" width="250" height="166.5" alt="Gerald Todd - Bass &amp; Keyboards">
+            <img src="./img/gerald.avif" width="250" height="167" alt="Gerald Todd - Bass and Keyboards">
           </noscript>
           <p>Gerald Todd</p>
           <p>Bass &amp; Keyboards</p>
@@ -333,14 +384,18 @@
           width="75px"
           height="33px"
           alt="Band Logo">
-        <p class="bolder">2024</p>
+        <p class="bolder">2025</p>
       </div>
       <p class="bolder">MONKEE BUSINESS</p>
       <div class="socialBanner">
-        <img class="facebook" src="img/facebook-white.svg" width="24px" height="24px" alt="Monkee Business Facebook">
-        <img class="instagram" src="img/instagram-white.svg" width="24px" height="24px" alt="Monkee Business Instagram">
+        <a href="https://www.facebook.com/monkeebusinessband/" target="_blank" rel="noopener noreferrer" aria-label="Monkee Business on Facebook">
+          <img class="facebook" src="img/facebook-white.svg" width="24" height="24" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/monkeebusinessband/" target="_blank" rel="noopener noreferrer" aria-label="Monkee Business on Instagram">
+          <img class="instagram" src="img/instagram-white.svg" width="24" height="24" alt="Instagram">
+        </a>
       </div>
-      <p>Copyright 2024 | Monkee Business</p>
+      <p>&copy; 2025 Monkee Business. All rights reserved.</p>
     </footer>
 
     <!-- Lazyload -->
@@ -350,7 +405,6 @@
       crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js" crossorigin></script>
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" crossorigin></script>
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" crossorigin></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" crossorigin></script>
     <script defer src="js/mainFunctions.js"></script>
   </body>

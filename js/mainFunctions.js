@@ -63,11 +63,11 @@ window.addEventListener("load", function () {
   }
 })
 
-// Manage video
+// Manage video (music section currently disabled)
 $(function () {
     $('video').on('click', function(event) {
       event.preventDefault();
-      document.getElementById('tucoVideo').play();
+      document.getElementById('bandVideo').play();
     });
 })
 
@@ -173,16 +173,7 @@ $(function () {
   }
 })
 
-// resize reload
-$(function () {
-  let initialWidth = $(window).innerWidth();
-  $(window).on('resize', function () {
-    let newWidth = $(window).innerWidth();
-    if (initialWidth != newWidth) {
-      document.location.reload(true);
-    }
-  })
-})
+// Layout is responsive via CSS — no reload needed on resize
 
 // Manage scroll up button
 $(function () {
@@ -228,17 +219,7 @@ $(function () {
     window.open("https://www.instagram.com/geraldtodd5249/", '_blank');
   });
 })
-// Location socials
-$(function () {
-  $('.facebook').on('click', function(event) {
-    event.preventDefault();
-    window.open("https://www.facebook.com/monkeebusinessband/", '_blank');
-  });
-  $('.instagram').on('click', function(event) {
-    event.preventDefault();
-    window.open("https://www.instagram.com/monkeebusinessband/", '_blank');
-  });
-})
+// Social links are now handled by native <a> tags in the HTML
 
 $(document).ready(function() {
   // If the URL has a hash on load, scroll to the target section

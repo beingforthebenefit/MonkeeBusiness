@@ -213,12 +213,6 @@ $(function () {
     });
 })
 
-// Locations
-$(function () {
-  $(".card.gerald").on('click', () => {
-    window.open("https://www.instagram.com/geraldtodd5249/", '_blank');
-  });
-})
 // Social links are now handled by native <a> tags in the HTML
 
 $(document).ready(function() {

@@ -425,7 +425,7 @@ p.miniPara {
   background: url("../img/instagram-min-white.svg") center/72px 72px no-repeat;
 }
 .bandMember__photo--apple-music::after {
-  background: url("../img/apple-music-white.svg") center/72px 72px no-repeat;
+  background: url("../img/apple-music.svg") center/72px 72px no-repeat;
 }
 .bandMember__photo--no-overlay::before,
 .bandMember__photo--no-overlay::after {

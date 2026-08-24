@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot-Image
-Disallow: /images/*.svg$
-
 Sitemap: https://monkeebusinessband.com/sitemap.xml

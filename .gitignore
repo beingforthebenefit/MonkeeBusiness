@@ -1,5 +1,10 @@
-/dart-sass
-/data
-/scss
-/sass
+node_modules/
+dist/
+
+# Local tooling
 .venv/
+.DS_Store
+*.log
+
+# Vite
+.vite/

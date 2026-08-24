@@ -1,0 +1,44 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  # Lets you redeploy from the Actions tab without pushing a commit — handy
+  # after editing src/shows.js straight from the GitHub web UI.
+  workflow_dispatch:
+
+# Never let two deploys race each other onto gh-pages.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+
+      - run: npm run build
+
+      # Publishes dist/ to the gh-pages branch, which is what the repository's
+      # Pages setting already points at. public/CNAME rides along in dist/ and
+      # keeps the custom domain bound.
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          cname: monkeebusinessband.com
+          commit_message: 'Deploy ${{ github.sha }}'

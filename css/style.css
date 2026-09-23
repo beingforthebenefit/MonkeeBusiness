@@ -682,6 +682,11 @@ textarea {
   border-radius: 50%;
   animation: spin 90s linear infinite;
   pointer-events: none;
+  /* Never let Chrome use this as its scroll anchor. It pokes above the page
+     top, so at scrollY 0 it is the first candidate — and its bounding box
+     changes as it spins, so the saved "anchor + offset" restored to a different
+     spot on every reload (the page jumped ~800px down, then back on the next). */
+  overflow-anchor: none;
 }
 
 .hero::after {

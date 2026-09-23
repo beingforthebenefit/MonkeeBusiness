@@ -106,8 +106,9 @@ scripts/              Image pipeline and the build-time shows renderer.
 that needs a stable URL (the social-share image, favicons) belongs there. `css/` and `js/`
 are bundled, minified, and content-hashed into `dist/assets/`.
 
-**Fonts** are self-hosted through the `@fontsource/lato` package, so the site makes no
-requests to Google. Only the Latin subset and the four weights in use are shipped.
+**Fonts** are self-hosted through the `@fontsource/bowlby-one` (display) and
+`@fontsource-variable/jost` (body) packages, so the site makes no requests to Google.
+Browsers download only the Latin files the page actually uses.
 
 **JavaScript is optional.** Every word, image, form, and link works with scripts disabled.
 JS only adds the mobile menu, scroll reveals, and in-page form submission.

@@ -65,7 +65,7 @@ function renderShow(show) {
   const cancelled = show.status === 'cancelled'
   const time = hasTime(show.date) ? timeFormat.format(when) : 'Time TBA'
   const tickets = show.tickets
-    ? `<a class="show__tickets button button--primary button--small" href="${escapeHtml(show.tickets)}" target="_blank" rel="noopener noreferrer">Tickets</a>`
+    ? `<a class="show__tickets button button--yellow button--flat button--small" href="${escapeHtml(show.tickets)}" target="_blank" rel="noopener noreferrer">Tickets</a>`
     : ''
   const note = show.note ? `<p class="show__note">${escapeHtml(show.note)}</p>` : ''
   const status = cancelled ? '<p class="show__status">Cancelled</p>' : ''
@@ -131,10 +131,11 @@ export function showsPlugin() {
         const list = upcomingShows()
         const markup = list.length
           ? `<ol class="shows">\n          ${list.map(renderShow).join('\n          ')}\n        </ol>`
-          : `<p class="shows-empty">
-            We're booking the next run of dates right now. Put your email in
-            below and you'll be the first to know.
-          </p>`
+          : `<h3 class="shows-card__title">No dates on the board<br />&mdash; yet!</h3>
+              <p class="shows-card__lead">
+                We're booking the next run of dates right now. Put your email in
+                below and you'll be the first to know.
+              </p>`
 
         return html
           .replace('<!--shows-->', markup)

@@ -8,9 +8,9 @@ photo). This file covers the conventions that aren't obvious from the code.
 
 ## Ground rules
 
-**No runtime dependencies.** `@fontsource/lato` is the only one, and it ships font files,
-not code. Don't add a CDN `<script>`, a framework, or a utility library. The previous
-version of this site carried ~250 KB of JavaScript, three quarters of which was never
+**No runtime dependencies.** `@fontsource/bowlby-one` and `@fontsource-variable/jost` are
+the only ones, and they ship font files, not code. Don't add a CDN `<script>`, a
+framework, or a utility library. The previous version of this site carried ~250 KB of JavaScript, three quarters of which was never
 called. If something needs a library, say why it can't be twenty lines of vanilla JS.
 
 **The page must work with JavaScript disabled.** All content is in `index.html` as real
@@ -30,12 +30,14 @@ hard-coded hex values.
 
 ## Layout conventions
 
-- Sections set their own max width via `.section--shows` / `--band` / `--contact`. Children
-  then align flush with their heading. Don't put `margin-inline: auto` on a child — that
-  centres narrow blocks away from the heading they belong to.
-- `.signup` is deliberately full-bleed (it has a background image) and centres its own
-  `.signup__inner` instead.
-- Breakpoints are `860px` (nav collapses, members stack) and `720px` (show rows stack).
+- The design is "Retro TV" (Claude Design, option A): full-bleed colour bands, thick ink
+  borders, hard offset shadows, Bowlby One display type over Jost.
+- Each `.section` is a full-bleed colour band; the `.wrap` (or `.wrap--narrow`) inside it
+  sets the measure. Children align flush with the section heading. Don't put
+  `margin-inline: auto` on a child — that centres narrow blocks away from their heading.
+- Breakpoints are `860px` (nav collapses, contact card stacks) and `720px` (hero, signup,
+  band intro, show rows, and member cards go to one column).
+- Test phones first (360, 390, 412px), then tablet (768, 1024) and desktop.
 
 ## Images
 

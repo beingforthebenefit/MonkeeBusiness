@@ -17,24 +17,6 @@ import '../css/style.css'
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 
 /* -------------------------------------------------------------------------
-   Header: solid background once the hero scrolls away
-   ------------------------------------------------------------------------- */
-
-function initHeader() {
-  const header = document.querySelector('.site-header')
-  const hero = document.querySelector('.hero')
-  if (!header || !hero) return
-
-  // Observing a sentinel beats a scroll listener: the browser only wakes us
-  // when the hero actually crosses the header line.
-  const observer = new IntersectionObserver(
-    ([entry]) => header.toggleAttribute('data-stuck', !entry.isIntersecting),
-    { rootMargin: '-70px 0px 0px 0px', threshold: 0 }
-  )
-  observer.observe(hero)
-}
-
-/* -------------------------------------------------------------------------
    Mobile navigation
    ------------------------------------------------------------------------- */
 
@@ -83,6 +65,10 @@ function initScrollSpy() {
     .map((link) => document.querySelector(link.getAttribute('href')))
     .filter(Boolean)
   if (!sections.length) return
+  // Watching the hero too means scrolling back to the top clears the highlight
+  // instead of leaving the last section lit.
+  const hero = document.querySelector('.hero')
+  if (hero) sections.push(hero)
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -110,7 +96,7 @@ function initReveal() {
   if (prefersReducedMotion.matches) return
 
   const targets = document.querySelectorAll(
-    '.section__head, .prose, .shows, .shows-empty, .section__foot, .member, .signup__inner, .contact'
+    '.section__head, .stripe, .shows-grid, .signup__grid, .band-intro, .member, .band-quote, .contact'
   )
   if (!targets.length) return
 
@@ -238,7 +224,6 @@ function setStatus(node, message, state) {
 
 /* ---------------------------------------------------------------------- */
 
-initHeader()
 initNav()
 initScrollSpy()
 initReveal()
